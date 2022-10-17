@@ -202,9 +202,9 @@ export default class EncryptionPublicKeyManager extends EventEmitter {
    * @param {object} msgParams - The msgParams to modify
    * @returns {Promise<object>} Promises the msgParams with the metamaskId property removed
    */
-  prepMsgForEncryptionPublicKey(msgParams) {
+  async prepMsgForEncryptionPublicKey(msgParams) {
     delete msgParams.metamaskId;
-    return Promise.resolve(msgParams);
+    return msgParams;
   }
 
   /**

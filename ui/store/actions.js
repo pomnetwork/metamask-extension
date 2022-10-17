@@ -3271,11 +3271,11 @@ export function loadingMethodDataFinished() {
 }
 
 export function getContractMethodData(data = '') {
-  return (dispatch, getState) => {
+  return async (dispatch, getState) => {
     const prefixedData = addHexPrefix(data);
     const fourBytePrefix = prefixedData.slice(0, 10);
     if (fourBytePrefix.length < 10) {
-      return Promise.resolve({});
+      return {};
     }
     const { knownMethodData } = getState().metamask;
     if (
@@ -3283,25 +3283,25 @@ export function getContractMethodData(data = '') {
       knownMethodData[fourBytePrefix] &&
       Object.keys(knownMethodData[fourBytePrefix]).length !== 0
     ) {
-      return Promise.resolve(knownMethodData[fourBytePrefix]);
+      return knownMethodData[fourBytePrefix];
     }
 
     dispatch(loadingMethodDataStarted());
     log.debug(`loadingMethodData`);
 
-    return getMethodDataAsync(fourBytePrefix).then(({ name, params }) => {
-      dispatch(loadingMethodDataFinished());
-      callBackgroundMethod(
-        'addKnownMethodData',
-        [fourBytePrefix, { name, params }],
-        (err) => {
-          if (err) {
-            dispatch(displayWarning(err.message));
-          }
-        },
-      );
-      return { name, params };
-    });
+    const { name, params } = getMethodDataAsync(fourBytePrefix);
+
+    dispatch(loadingMethodDataFinished());
+    callBackgroundMethod(
+      'addKnownMethodData',
+      [fourBytePrefix, { name, params }],
+      (err) => {
+        if (err) {
+          dispatch(displayWarning(err.message));
+        }
+      },
+    );
+    return { name, params };
   };
 }
 
