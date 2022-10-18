@@ -14,6 +14,7 @@ import { stripHexPrefix } from '../../../../shared/modules/hexstring-utils';
 import Button from '../../ui/button';
 import SiteIcon from '../../ui/site-icon';
 import SiteOrigin from '../../ui/site-origin';
+import SignatureRequestOriginalWarning from './signature-request-original-warning';
 
 export default class SignatureRequestOriginal extends Component {
   static contextTypes = {
@@ -46,6 +47,7 @@ export default class SignatureRequestOriginal extends Component {
 
   state = {
     fromAccount: this.props.fromAccount,
+    showSignatureRequestWarning: false,
   };
 
   renderHeader = () => {
@@ -258,13 +260,59 @@ export default class SignatureRequestOriginal extends Component {
     );
   };
 
-  renderFooter = () => {
+  renderWarning = () => {
     const {
       cancel,
       clearConfirmTransaction,
       history,
       mostRecentOverviewPage,
       sign,
+    } = this.props;
+    const { fromAccount } = this.state;
+    const { trackEvent, type } = this.context;
+
+    return (
+      <SignatureRequestOriginalWarning
+        senderAddress={fromAccount.address}
+        name={fromAccount.name}
+        onSubmit={async (event) => {
+          await sign(event);
+          trackEvent({
+            category: EVENT.CATEGORIES.TRANSACTIONS,
+            event: 'Confirm',
+            properties: {
+              action: 'Sign Request',
+              legacy_event: true,
+              type,
+            },
+          });
+          clearConfirmTransaction();
+          history.push(mostRecentOverviewPage);
+        }}
+        onCancel={async (event) => {
+          await cancel(event);
+          trackEvent({
+            category: EVENT.CATEGORIES.TRANSACTIONS,
+            event: 'Cancel',
+            properties: {
+              action: 'Sign Request',
+              legacy_event: true,
+              type,
+            },
+          });
+          clearConfirmTransaction();
+          history.push(mostRecentOverviewPage);
+        }}
+      />
+    );
+  };
+
+  renderFooter = () => {
+    const {
+      cancel,
+      clearConfirmTransaction,
+      history,
+      mostRecentOverviewPage,
       txData: { type },
       hardwareWalletRequiresConnection,
     } = this.props;
@@ -299,20 +347,7 @@ export default class SignatureRequestOriginal extends Component {
           large
           className="request-signature__footer__sign-button"
           disabled={hardwareWalletRequiresConnection}
-          onClick={async (event) => {
-            await sign(event);
-            trackEvent({
-              category: EVENT.CATEGORIES.TRANSACTIONS,
-              event: 'Confirm',
-              properties: {
-                action: 'Sign Request',
-                legacy_event: true,
-                type,
-              },
-            });
-            clearConfirmTransaction();
-            history.push(mostRecentOverviewPage);
-          }}
+          onClick={() => this.setState({ showSignatureRequestWarning: true })}
         >
           {t('sign')}
         </Button>
@@ -343,6 +378,7 @@ export default class SignatureRequestOriginal extends Component {
 
   render = () => {
     const { messagesCount } = this.props;
+    const { showSignatureRequestWarning } = this.state;
     const { t } = this.context;
     const rejectNText = t('rejectTxsN', [messagesCount]);
     return (
@@ -354,6 +390,7 @@ export default class SignatureRequestOriginal extends Component {
             <LedgerInstructionField showDataInstruction />
           </div>
         ) : null}
+        {showSignatureRequestWarning && this.renderWarning()}
         {this.renderFooter()}
         {messagesCount > 1 ? (
           <Button
