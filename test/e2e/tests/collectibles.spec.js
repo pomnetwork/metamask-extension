@@ -114,7 +114,7 @@ describe('Collectibles', function () {
         assert.equal(await func.getText(), 'Function: Approve');
 
         // Confirm approval
-        await driver.clickElement({ text: 'Confirm', tag: 'button' });
+        await driver.clickElement({ text: 'Approve', tag: 'button' });
         await driver.waitUntilXWindowHandles(2);
         await driver.switchToWindow(extension);
         await driver.clickElement('[data-testid="home__activity-tab"]');
@@ -183,7 +183,7 @@ describe('Collectibles', function () {
         assert.equal(proceedWithCautionIsDisplayed, true);
 
         // Confirm enabling set approval for all
-        await driver.clickElement({ text: 'Confirm', tag: 'button' });
+        await driver.clickElement({ text: 'Approve', tag: 'button' });
         await driver.waitUntilXWindowHandles(2);
         await driver.switchToWindow(extension);
         await driver.clickElement('[data-testid="home__activity-tab"]');
@@ -252,7 +252,7 @@ describe('Collectibles', function () {
         assert.equal(proceedWithCautionIsDisplayed, false);
 
         // Confirm disabling set approval for all
-        await driver.clickElement({ text: 'Confirm', tag: 'button' });
+        await driver.clickElement({ text: 'Approve', tag: 'button' });
         await driver.waitUntilXWindowHandles(2);
         await driver.switchToWindow(extension);
         await driver.clickElement('[data-testid="home__activity-tab"]');
