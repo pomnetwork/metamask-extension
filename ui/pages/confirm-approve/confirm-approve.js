@@ -27,8 +27,10 @@ import {
   getIsMultiLayerFeeNetwork,
   checkNetworkAndAccountSupports1559,
   getEIP1559V2Enabled,
+  getMetaMaskIdentities,
 } from '../../selectors';
 import { useApproveTransaction } from '../../hooks/useApproveTransaction';
+import { useCollectiblesCollections } from '../../hooks/useCollectiblesCollections';
 import AdvancedGasFeePopover from '../../components/app/advanced-gas-fee-popover';
 import EditGasFeePopover from '../../components/app/edit-gas-fee-popover';
 import EditGasPopover from '../../components/app/edit-gas-popover/edit-gas-popover.component';
@@ -63,8 +65,10 @@ export default function ConfirmApprove({
   isSetApproveForAll,
 }) {
   const dispatch = useDispatch();
-  const { txParams: { data: transactionData } = {} } = transaction;
+  const { txParams: { from: fromAddress, data: transactionData } = {} } =
+    transaction;
 
+  const identities = useSelector(getMetaMaskIdentities);
   const currentCurrency = useSelector(getCurrentCurrency);
   const nativeCurrency = useSelector(getNativeCurrency);
   const subjectMetadata = useSelector(getSubjectMetadata);
@@ -93,6 +97,8 @@ export default function ConfirmApprove({
     showCustomizeGasPopover,
     closeCustomizeGasPopover,
   } = useApproveTransaction();
+
+  const { collections } = useCollectiblesCollections();
 
   useEffect(() => {
     if (customPermissionAmount && previousTokenAmount.current !== tokenAmount) {
@@ -132,6 +138,7 @@ export default function ConfirmApprove({
     checkIfContract();
   }, [checkIfContract]);
 
+  const { name: fromName } = identities[fromAddress];
   const { origin } = transaction;
   const formattedOrigin = origin || '';
 
@@ -220,6 +227,9 @@ export default function ConfirmApprove({
         contentComponent={
           <TransactionModalContextProvider>
             <ConfirmApproveContent
+              collections={collections}
+              fromName={fromName}
+              fromAddress={fromAddress}
               userAddress={userAddress}
               isSetApproveForAll={isSetApproveForAll}
               isApprovalOrRejection={isApprovalOrRejection}
