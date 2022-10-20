@@ -51,7 +51,7 @@
     "lint:changelog:rc": "auto-changelog validate --rc",
     "lint:eslint": "eslint . --ext js,ts,tsx,snap --cache",
     "lint:eslint:fix": "yarn lint:eslint --fix",
-    "lint:lockfile": "lockfile-lint --path yarn.lock --allowed-hosts npm yarn github.com codeload.github.com --empty-hostname false --allowed-schemes \"https:\" \"git+https:\"",
+    "lint:lockfile": "lockfile-lint --path yarn.lock --allowed-hosts npm yarn github.com codeload.github.com --empty-hostname true --allowed-schemes \"https:\" \"git+https:\" \"npm:\" \"patch:\" \"workspace:\"",
     "lint:shellcheck": "./development/shellcheck.sh",
     "lint:styles": "stylelint '*/**/*.scss'",
     "lint:styles:fix": "yarn lint:styles --fix",
@@ -186,7 +186,8 @@
     "secp256k1@^3.6.1": "patch:secp256k1@npm%3A3.8.0#./.yarn/patches/secp256k1-npm-3.8.0-e2ef54940a.patch",
     "squirrelly@^8.0.8": "patch:squirrelly@npm%3A8.0.8#./.yarn/patches/squirrelly-npm-8.0.8-1d17420d8d.patch",
     "stylelint@^13.6.1": "patch:stylelint@npm%3A13.6.1#./.yarn/patches/stylelint-npm-13.6.1-47aaddf62b.patch",
-    "improved-yarn-audit@^3.0.0": "patch:improved-yarn-audit@npm%3A3.0.0#./.yarn/patches/improved-yarn-audit-npm-3.0.0-3e37ee431a.patch"
+    "improved-yarn-audit@^3.0.0": "patch:improved-yarn-audit@npm%3A3.0.0#./.yarn/patches/improved-yarn-audit-npm-3.0.0-3e37ee431a.patch",
+    "lockfile-lint-api@^5.4.6": "patch:lockfile-lint-api@npm%3A5.4.6#./.yarn/patches/lockfile-lint-api-npm-5.4.6-dc86b73900.patch"
   },
   "dependencies": {
     "3box": "^1.10.2",
@@ -441,7 +442,7 @@
     "lavamoat": "^6.2.0",
     "lavamoat-browserify": "^15.2.0",
     "lavamoat-viz": "^6.0.9",
-    "lockfile-lint": "^4.0.0",
+    "lockfile-lint": "^4.9.6",
     "loose-envify": "^1.4.0",
     "madge": "^5.0.1",
     "mocha": "^7.2.0",
