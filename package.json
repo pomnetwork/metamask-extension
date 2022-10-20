@@ -185,7 +185,8 @@
     "secp256k1@^3.6.2": "patch:secp256k1@npm%3A3.8.0#./.yarn/patches/secp256k1-npm-3.8.0-e2ef54940a.patch",
     "secp256k1@^3.6.1": "patch:secp256k1@npm%3A3.8.0#./.yarn/patches/secp256k1-npm-3.8.0-e2ef54940a.patch",
     "squirrelly@^8.0.8": "patch:squirrelly@npm%3A8.0.8#./.yarn/patches/squirrelly-npm-8.0.8-1d17420d8d.patch",
-    "stylelint@^13.6.1": "patch:stylelint@npm%3A13.6.1#./.yarn/patches/stylelint-npm-13.6.1-47aaddf62b.patch"
+    "stylelint@^13.6.1": "patch:stylelint@npm%3A13.6.1#./.yarn/patches/stylelint-npm-13.6.1-47aaddf62b.patch",
+    "improved-yarn-audit@^3.0.0": "patch:improved-yarn-audit@npm%3A3.0.0#./.yarn/patches/improved-yarn-audit-npm-3.0.0-3e37ee431a.patch"
   },
   "dependencies": {
     "3box": "^1.10.2",
