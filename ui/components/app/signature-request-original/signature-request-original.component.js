@@ -17,6 +17,7 @@ import {
   TYPOGRAPHY,
   FONT_WEIGHT,
 } from '../../../helpers/constants/design-system';
+import { NETWORK_TYPES } from '../../../../shared/constants/network';
 
 export default class SignatureRequestOriginal extends Component {
   static contextTypes = {
@@ -44,18 +45,39 @@ export default class SignatureRequestOriginal extends Component {
     messagesCount: PropTypes.number,
     showRejectTransactionsConfirmationModal: PropTypes.func.isRequired,
     cancelAll: PropTypes.func.isRequired,
-    currentNetwork: PropTypes.string,
+    provider: PropTypes.object,
   };
 
   state = {
     fromAccount: this.props.fromAccount,
   };
 
+  getNetworkName() {
+    const { provider } = this.props;
+    const providerName = provider.type;
+    const { t } = this.context;
+
+    switch (providerName) {
+      case NETWORK_TYPES.MAINNET:
+        return t('mainnet');
+      case NETWORK_TYPES.GOERLI:
+        return t('goerli');
+      case NETWORK_TYPES.SEPOLIA:
+        return t('sepolia');
+      case NETWORK_TYPES.LOCALHOST:
+        return t('localhost');
+      default:
+        return provider.nickname || t('unknownNetwork');
+    }
+  }
+
   renderHeader = () => {
-    const { conversionRate, nativeCurrency, currentNetwork } = this.props;
+    const { conversionRate, nativeCurrency } = this.props;
     const {
       fromAccount: { address, balance, name },
     } = this.state;
+
+    const currentNetwork = this.getNetworkName();
 
     const balanceInBaseAsset = conversionUtil(balance, {
       fromNumericBase: 'hex',

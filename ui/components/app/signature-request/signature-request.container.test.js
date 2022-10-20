@@ -34,6 +34,9 @@ describe('Signature Request', () => {
     clearConfirmTransaction: sinon.spy(),
     cancelMessage: sinon.spy(),
     cancel: sinon.stub().resolves(),
+    provider: {
+      type: 'rpc',
+    },
     sign: sinon.stub().resolves(),
     txData: {
       msgParams: {

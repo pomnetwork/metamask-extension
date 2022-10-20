@@ -18,14 +18,14 @@ function mapStateToProps(state, ownProps) {
   const {
     msgParams: { from },
   } = txData;
+  const { provider } = state.metamask;
+
   const hardwareWalletRequiresConnection =
     doesAddressRequireLedgerHidConnection(state, from);
   const isLedgerWallet = isAddressLedger(state, from);
-  const currentNetwork =
-    state.metamask.provider.nickname || state.metamask.provider.ticker;
 
   return {
-    currentNetwork,
+    provider,
     isLedgerWallet,
     hardwareWalletRequiresConnection,
     conversionRate: conversionRateSelector(state),
@@ -43,7 +43,7 @@ function mergeProps(stateProps, dispatchProps, ownProps) {
     hardwareWalletRequiresConnection,
     conversionRate,
     nativeCurrency,
-    currentNetwork,
+    provider,
     subjectMetadata,
   } = stateProps;
   const {
@@ -88,7 +88,7 @@ function mergeProps(stateProps, dispatchProps, ownProps) {
     hardwareWalletRequiresConnection,
     conversionRate,
     nativeCurrency,
-    currentNetwork,
+    provider,
     subjectMetadata,
   };
 }

@@ -11,6 +11,7 @@ import {
   FONT_WEIGHT,
 } from '../../../helpers/constants/design-system';
 import NetworkAccountBalanceHeader from '../network-account-balance-header';
+import { NETWORK_TYPES } from '../../../../shared/constants/network';
 import Footer from './signature-request-footer';
 import Message from './signature-request-message';
 
@@ -47,7 +48,7 @@ export default class SignatureRequest extends PureComponent {
 
     conversionRate: PropTypes.number,
     nativeCurrency: PropTypes.string,
-    currentNetwork: PropTypes.string,
+    provider: PropTypes.object,
     subjectMetadata: PropTypes.object,
   };
 
@@ -71,11 +72,32 @@ export default class SignatureRequest extends PureComponent {
     )}`;
   }
 
+  getNetworkName() {
+    const { provider } = this.props;
+    const providerName = provider.type;
+    const { t } = this.context;
+
+    switch (providerName) {
+      case NETWORK_TYPES.MAINNET:
+        return t('mainnet');
+      case NETWORK_TYPES.GOERLI:
+        return t('goerli');
+      case NETWORK_TYPES.SEPOLIA:
+        return t('sepolia');
+      case NETWORK_TYPES.LOCALHOST:
+        return t('localhost');
+      default:
+        return provider.nickname || t('unknownNetwork');
+    }
+  }
+
   renderHeader = () => {
-    const { conversionRate, nativeCurrency, currentNetwork } = this.props;
+    const { conversionRate, nativeCurrency } = this.props;
     const {
       fromAccount: { address, balance, name },
     } = this.props;
+
+    const currentNetwork = this.getNetworkName();
 
     const balanceInBaseAsset = conversionUtil(balance, {
       fromNumericBase: 'hex',

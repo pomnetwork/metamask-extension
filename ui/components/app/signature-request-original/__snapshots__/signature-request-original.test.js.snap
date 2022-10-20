@@ -73,7 +73,9 @@ exports[`SignatureRequestOriginal should match snapshot 1`] = `
           >
             <h6
               class="box box--margin-top-1 box--flex-direction-row typography typography--h6 typography--weight-normal typography--style-normal typography--color-text-alternative"
-            />
+            >
+              Unknown private network
+            </h6>
             <h6
               class="box box--margin-bottom-1 box--flex-direction-row typography typography--h6 typography--weight-bold typography--style-normal typography--color-text-default"
             >
