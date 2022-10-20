@@ -215,9 +215,6 @@ describe('Sign Typed Data Signature Request', function () {
 
         // Approve signing typed data
         await driver.clickElement({ text: 'Sign', tag: 'button' });
-        await driver.clickElement(
-          '.signature-request-warning__footer__sign-button',
-        );
         await driver.waitUntilXWindowHandles(2);
         windowHandles = await driver.getAllWindowHandles();
 
