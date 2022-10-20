@@ -42,9 +42,6 @@ describe('Personal sign', function () {
         assert.equal(personalMessage, 'Example `personal_sign` message');
 
         await driver.clickElement('[data-testid="request-signature__sign"]');
-        await driver.clickElement(
-          '.signature-request-warning__footer__sign-button',
-        );
 
         // Switch to the Dapp
         await driver.waitUntilXWindowHandles(2);
