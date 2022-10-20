@@ -81,13 +81,13 @@
       "packages": {
         "3box>3id-resolver>did-jwt>base64url": true,
         "3box>did-jwt>did-resolver": true,
+        "3box>did-jwt>js-sha3": true,
         "3box>ethers>elliptic": true,
         "3box>js-sha256": true,
         "3box>tweetnacl": true,
         "3box>tweetnacl-util": true,
         "@babel/runtime": true,
-        "browserify>buffer": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "browserify>buffer": true
       }
     },
     "3box>3id-resolver>did-jwt>base64url": {
@@ -471,13 +471,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>ipfs-bitswap>varint-decoder": {
@@ -596,14 +596,9 @@
     },
     "3box>ipfs>ipfs-repo>datastore-level>encoding-down>abstract-leveldown": {
       "packages": {
-        "3box>ipfs>ipfs-repo>datastore-level>encoding-down>abstract-leveldown>level-supports": true,
+        "3box>ipfs>ipfs-repo>datastore-level>leveldown>abstract-leveldown>level-supports": true,
         "3box>orbit-db>orbit-db-cache>level-js>immediate": true,
         "browserify>buffer": true,
-        "watchify>xtend": true
-      }
-    },
-    "3box>ipfs>ipfs-repo>datastore-level>encoding-down>abstract-leveldown>level-supports": {
-      "packages": {
         "watchify>xtend": true
       }
     },
@@ -650,6 +645,11 @@
         "watchify>xtend": true
       }
     },
+    "3box>ipfs>ipfs-repo>datastore-level>leveldown>abstract-leveldown>level-supports": {
+      "packages": {
+        "watchify>xtend": true
+      }
+    },
     "3box>ipfs>ipfs-repo>sort-keys": {
       "packages": {
         "geckodriver>got>is-plain-obj": true
@@ -682,11 +682,11 @@
         "3box>ipfs>ipfs-unixfs-importer>async-iterator-batch": true,
         "3box>ipfs>ipfs-unixfs-importer>async-iterator-first": true,
         "3box>ipfs>ipfs-unixfs-importer>rabin-wasm": true,
-        "3box>ipfs>ipfs-unixfs-importer>superstruct": true,
         "3box>ipfs>ipld-dag-pb": true,
         "3box>ipfs>ipld-raw>multihashing-async": true,
         "3box>ipfs>multicodec": true,
         "3box>ipfs>multihashes": true,
+        "3box>ipfs>superstruct": true,
         "browserify>buffer": true,
         "madge>rc>deep-extend": true
       }
@@ -783,12 +783,12 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>err-code": true,
         "3box>ipfs>ipld-raw>multihashing-async>murmurhash3js-revisited": true,
         "3box>ipfs>multihashes": true,
         "browserify>buffer": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>ipld-raw>multihashing-async>murmurhash3js-revisited": {
@@ -841,11 +841,11 @@
         "3box>ipfs>libp2p>libp2p-floodsub": true,
         "3box>ipfs>libp2p>libp2p-ping": true,
         "3box>ipfs>libp2p>libp2p-switch": true,
-        "3box>ipfs>libp2p>superstruct": true,
         "3box>ipfs>multiaddr": true,
         "3box>ipfs>peer-book": true,
         "3box>ipfs>peer-id": true,
         "3box>ipfs>peer-info": true,
+        "3box>ipfs>superstruct": true,
         "browserify>events": true,
         "browserify>insert-module-globals>is-buffer": true,
         "browserify>process": true,
@@ -919,13 +919,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>libp2p-crypto>multihashing-async": {
@@ -934,13 +934,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>libp2p-kad-dht": {
@@ -1000,13 +1000,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>libp2p-kad-dht>p-queue": {
@@ -1078,13 +1078,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>libp2p-secio": {
@@ -1112,13 +1112,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>libp2p-secio>pull-handshake": {
@@ -1718,13 +1718,13 @@
         "msCrypto": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ipfs>multihashes": true,
         "3box>ipfs>multihashing-async>murmurhash3js": true,
         "3box>ipfs>multihashing-async>nodeify": true,
         "browserify>buffer": true,
         "browserify>process": true,
-        "ethereumjs-util>ethereum-cryptography>blakejs": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "ethereumjs-util>ethereum-cryptography>blakejs": true
       }
     },
     "3box>ipfs>multihashing-async>murmurhash3js": {
@@ -2150,12 +2150,12 @@
       },
       "packages": {
         "3box>3box-orbitdb-plugins>ipfs-log": true,
-        "3box>ipfs>libp2p-kad-dht>p-times>p-map": true,
         "3box>orbit-db>logplease": true,
         "3box>orbit-db>orbit-db-io": true,
         "3box>orbit-db>orbit-db-store>p-each-series": true,
         "browserify>buffer": true,
         "browserify>events": true,
+        "chromedriver>del>p-map": true,
         "readable-stream": true
       }
     },
@@ -2247,7 +2247,16 @@
         "TextEncoder": true
       },
       "packages": {
-        "@ensdomains/content-hash>cids>multibase": true
+        "@ensdomains/content-hash>cids>uint8arrays>multibase": true
+      }
+    },
+    "@ensdomains/content-hash>cids>uint8arrays>multibase": {
+      "globals": {
+        "TextDecoder": true,
+        "TextEncoder": true
+      },
+      "packages": {
+        "@ensdomains/content-hash>cids>multibase>@multiformats/base-x": true
       }
     },
     "@ensdomains/content-hash>js-base64": {
@@ -2767,23 +2776,15 @@
       },
       "packages": {
         "@metamask/controllers>eth-method-registry>ethjs>bn.js": true,
-        "@metamask/controllers>eth-method-registry>ethjs>ethjs-abi": true,
         "@metamask/controllers>eth-method-registry>ethjs>ethjs-contract": true,
         "@metamask/controllers>eth-method-registry>ethjs>ethjs-query": true,
         "@metamask/controllers>eth-method-registry>ethjs>js-sha3": true,
         "browserify>buffer": true,
+        "ethjs>ethjs-abi": true,
         "ethjs>ethjs-filter": true,
         "ethjs>ethjs-provider-http": true,
         "ethjs>ethjs-unit": true,
         "ethjs>ethjs-util": true,
-        "ethjs>number-to-bn": true
-      }
-    },
-    "@metamask/controllers>eth-method-registry>ethjs>ethjs-abi": {
-      "packages": {
-        "@metamask/controllers>eth-method-registry>ethjs>bn.js": true,
-        "@metamask/controllers>eth-method-registry>ethjs>js-sha3": true,
-        "browserify>buffer": true,
         "ethjs>number-to-bn": true
       }
     },
@@ -3250,23 +3251,15 @@
       },
       "packages": {
         "@metamask/eth-token-tracker>ethjs>bn.js": true,
-        "@metamask/eth-token-tracker>ethjs>ethjs-abi": true,
         "@metamask/eth-token-tracker>ethjs>ethjs-contract": true,
         "@metamask/eth-token-tracker>ethjs>ethjs-query": true,
         "@metamask/eth-token-tracker>ethjs>js-sha3": true,
         "browserify>buffer": true,
+        "ethjs>ethjs-abi": true,
         "ethjs>ethjs-filter": true,
         "ethjs>ethjs-provider-http": true,
         "ethjs>ethjs-unit": true,
         "ethjs>ethjs-util": true,
-        "ethjs>number-to-bn": true
-      }
-    },
-    "@metamask/eth-token-tracker>ethjs>ethjs-abi": {
-      "packages": {
-        "@metamask/eth-token-tracker>ethjs>bn.js": true,
-        "@metamask/eth-token-tracker>ethjs>js-sha3": true,
-        "browserify>buffer": true,
         "ethjs>number-to-bn": true
       }
     },
@@ -3892,7 +3885,7 @@
     },
     "@truffle/codec>web3-utils>ethereum-bloom-filters": {
       "packages": {
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true
       }
     },
     "@truffle/decoder": {
@@ -4301,6 +4294,11 @@
         "document.createElement": true
       }
     },
+    "chromedriver>del>p-map": {
+      "packages": {
+        "nyc>p-map>aggregate-error": true
+      }
+    },
     "classnames": {
       "globals": {
         "classNames": "write",
@@ -4434,8 +4432,8 @@
         "TextEncoder": true
       },
       "packages": {
-        "@metamask/snap-utils>superstruct": true,
         "eslint>fast-deep-equal": true,
+        "eth-block-tracker>@metamask/utils>superstruct": true,
         "nock>debug": true
       }
     },
@@ -4726,6 +4724,7 @@
         "setTimeout": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "3box>ethers>elliptic": true,
         "@ethereumjs/common>crc-32": true,
         "@metamask/rpc-methods>@metamask/controllers>@ethersproject/abi": true,
@@ -4743,7 +4742,6 @@
         "eth-lattice-keyring>gridplus-sdk>secp256k1": true,
         "ethereumjs-wallet>aes-js": true,
         "ethereumjs-wallet>bs58check": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true,
         "ethers>@ethersproject/sha2>hash.js": true,
         "lodash": true
       }
@@ -4805,9 +4803,9 @@
         "intToBuffer": true
       },
       "packages": {
+        "3box>did-jwt>js-sha3": true,
         "eth-lattice-keyring>gridplus-sdk>eth-eip712-util-browser>bn.js": true,
-        "eth-lattice-keyring>gridplus-sdk>eth-eip712-util-browser>buffer": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "eth-lattice-keyring>gridplus-sdk>eth-eip712-util-browser>buffer": true
       }
     },
     "eth-lattice-keyring>gridplus-sdk>eth-eip712-util-browser>bn.js": {
@@ -5341,8 +5339,8 @@
     },
     "ethers>@ethersproject/abi>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/abi>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "ethers>@ethersproject/abi>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/abi>@ethersproject/logger": {
@@ -5409,8 +5407,8 @@
     },
     "ethers>@ethersproject/address>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/address>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "ethers>@ethersproject/address>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/address>@ethersproject/logger": {
@@ -5576,8 +5574,8 @@
     },
     "ethers>@ethersproject/contracts>@ethersproject/abi>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/contracts>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "ethers>@ethersproject/contracts>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/contracts>@ethersproject/abi>@ethersproject/strings": {
@@ -5720,8 +5718,8 @@
     },
     "ethers>@ethersproject/hash>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/hash>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "ethers>@ethersproject/hash>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/hash>@ethersproject/logger": {
@@ -5806,8 +5804,8 @@
     },
     "ethers>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/keccak256>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "ethers>@ethersproject/keccak256>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/keccak256>@ethersproject/bytes": {
@@ -5818,14 +5816,6 @@
     "ethers>@ethersproject/keccak256>@ethersproject/bytes>@ethersproject/logger": {
       "globals": {
         "console": true
-      }
-    },
-    "ethers>@ethersproject/keccak256>js-sha3": {
-      "globals": {
-        "define": true
-      },
-      "packages": {
-        "browserify>process": true
       }
     },
     "ethers>@ethersproject/logger": {
@@ -5955,7 +5945,7 @@
     },
     "ethers>@ethersproject/providers>@ethersproject/hash>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/keccak256>js-sha3": true,
+        "3box>did-jwt>js-sha3": true,
         "ethers>@ethersproject/providers>@ethersproject/bytes": true
       }
     },
@@ -6224,7 +6214,7 @@
     },
     "ethers>@ethersproject/transactions>@ethersproject/keccak256": {
       "packages": {
-        "ethers>@ethersproject/keccak256>js-sha3": true,
+        "3box>did-jwt>js-sha3": true,
         "ethers>@ethersproject/transactions>@ethersproject/bytes": true
       }
     },
@@ -6303,8 +6293,8 @@
     },
     "ethers>@ethersproject/wallet>@ethersproject/keccak256": {
       "packages": {
-        "@ethersproject/bignumber>@ethersproject/bytes": true,
-        "ethers>@ethersproject/keccak256>js-sha3": true
+        "3box>did-jwt>js-sha3": true,
+        "@ethersproject/bignumber>@ethersproject/bytes": true
       }
     },
     "ethers>@ethersproject/wallet>@ethersproject/properties": {
@@ -6446,13 +6436,8 @@
       "packages": {
         "browserify>buffer": true,
         "ethjs-contract>ethjs-abi>bn.js": true,
-        "ethjs-contract>ethjs-abi>js-sha3": true,
+        "ethjs-contract>js-sha3": true,
         "ethjs>number-to-bn": true
-      }
-    },
-    "ethjs-contract>ethjs-abi>js-sha3": {
-      "packages": {
-        "browserify>process": true
       }
     },
     "ethjs-contract>js-sha3": {
@@ -6503,9 +6488,14 @@
     "ethjs>ethjs-abi": {
       "packages": {
         "browserify>buffer": true,
-        "ethjs>bn.js": true,
-        "ethjs>js-sha3": true,
+        "ethjs>ethjs-abi>bn.js": true,
+        "ethjs>ethjs-abi>js-sha3": true,
         "ethjs>number-to-bn": true
+      }
+    },
+    "ethjs>ethjs-abi>js-sha3": {
+      "packages": {
+        "browserify>process": true
       }
     },
     "ethjs>ethjs-filter": {
@@ -6742,6 +6732,17 @@
         "await-semaphore": true,
         "browserify>assert": true,
         "ethjs-query": true
+      }
+    },
+    "nyc>p-map>aggregate-error": {
+      "packages": {
+        "@testing-library/jest-dom>redent>indent-string": true,
+        "nyc>p-map>aggregate-error>clean-stack": true
+      }
+    },
+    "nyc>p-map>aggregate-error>clean-stack": {
+      "packages": {
+        "browserify>browser-resolve": true
       }
     },
     "obj-multiplex": {
