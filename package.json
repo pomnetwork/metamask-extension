@@ -90,7 +90,8 @@
     "pull-ws": "^3.3.2",
     "json-schema": "^0.4.0",
     "simple-get": "^4.0.1",
-    "@storybook/**/ast-types": "^0.14.2"
+    "@storybook/**/ast-types": "^0.14.2",
+    "symbol-observable": "^2.0.3"
   },
   "dependencies": {
     "3box": "^1.10.2",
