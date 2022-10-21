@@ -261,7 +261,6 @@ const setupPageStreams = () => {
   pageChannel = pageMux.createStream(PROVIDER);
 };
 
-let REPLAY_ENABLED = false;
 const setupExtensionStreams = () => {
   REPLAY_ENABLED = true;
   extensionPort = browser.runtime.connect({ name: CONTENT_SCRIPT });
@@ -462,16 +461,21 @@ function logStreamDisconnectWarning(remoteLabel, error) {
   );
 }
 
+// The field below is used to ensute that replay is done only once for each restart.
+let REPLAY_ENABLED = false;
+
 /**
  * The function send message to inpage to notify it of extension stream connection
  * This is used as notification to replay any pending messages in MV3
+ *
+ * Message is sent to inpage when method 'metamask_chainChanged' is receined from extension,
+ * this method signifies that background state is completley initislised and it is ready to process method calls.
  */
 function extensionStreamMessageListener(msg) {
   if (
     REPLAY_ENABLED &&
     isManifestV3 &&
-    (msg.data.method === 'metamask_unlockStateChanged' ||
-      msg.data.method === 'metamask_chainChanged')
+    msg.data.method === 'metamask_chainChanged'
   ) {
     REPLAY_ENABLED = false;
     window.postMessage(

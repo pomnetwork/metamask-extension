@@ -80,6 +80,10 @@ export default class AccountTracker {
     this._blockTracker.addListener('latest', this._updateForBlock);
     // fetch account balances
     this._updateAccounts();
+    this.notifyAllConnections({
+      method: 'START',
+      params: {},
+    });
   }
 
   stop() {

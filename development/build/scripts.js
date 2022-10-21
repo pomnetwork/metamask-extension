@@ -285,7 +285,7 @@ function createScriptTasks({
     const allSubtasks = [
       standardSubtask,
       contentscriptSubtask,
-      disableConsoleSubtask,
+      // disableConsoleSubtask,
       installSentrySubtask,
     ].map((subtask) =>
       runInChildProcess(subtask, {
