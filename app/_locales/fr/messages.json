@@ -45,11 +45,20 @@
     "message": "Ngrave (bientôt disponible)"
   },
   "SIWEAddressInvalid": {
-    "message": "L'adresse figurant dans la demande de connexion ne correspond pas à l'adresse du compte que vous utilisez pour vous connecter."
+    "message": "L’adresse figurant dans la demande de connexion ne correspond pas à l’adresse du compte que vous utilisez pour vous connecter."
+  },
+  "SIWEDomainInvalidText": {
+    "message": "Le nom de domaine du site Web auquel vous tentez de vous connecter ne correspond pas au nom de domaine indiqué dans la demande de connexion. Procédez avec prudence."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Demande de site trompeuse."
   },
   "SIWEDomainWarningBody": {
-    "message": "Le site Web ($1) vous demande de vous connecter au mauvais nom domaine. Il peut s'agir d'une tentative d'hameçonnage.",
+    "message": "Le site Web ($1) vous demande de vous connecter au mauvais nom domaine. Il peut s’agir d’une tentative d’hameçonnage.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Site non sécurisé"
   },
   "SIWELabelChainID": {
     "message": "Identifiant de la chaîne :"
@@ -318,7 +327,7 @@
     "message": "Approuver"
   },
   "approveAllTokensTitle": {
-    "message": "Voulez-vous lui accorder l'autorisation d'accéder et de transférer tous vos $1 ?",
+    "message": "Voulez-vous lui accorder l’autorisation d’accéder et de transférer tous vos $1 ?",
     "description": "$1 is the symbol of the token for which the user is granting approval"
   },
   "approveAndInstall": {
@@ -513,6 +522,9 @@
   "buyCryptoWithTransakDescription": {
     "message": "Transak prend en charge les cartes de crédit et de débit, Apple Pay, MobiKwik et les virements bancaires (selon l’emplacement) dans plus de 100 pays. Les tokens $1 sont directement déposés sur votre compte MetaMask.",
     "description": "$1 represents the crypto symbol to be purchased"
+  },
+  "buyNow": {
+    "message": "Achetez maintenant"
   },
   "buyWithWyre": {
     "message": "Acheter des $1 avec Wyre"
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Nous avons détecté que cet actif a été ajouté en tant que NFT. Souhaitez-vous le retirer de votre liste de tokens ?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "Copié!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Langue actuelle"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "L’URL actuelle du RPC pour ce réseau a été dépréciée."
   },
   "currentTitle": {
     "message": "Actuel :"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Hex"
+  },
+  "dcent": {
+    "message": "D’Cent"
   },
   "decimal": {
     "message": "Nombre de décimales du jeton"
@@ -990,11 +1011,14 @@
   "downloadGoogleChrome": {
     "message": "Télécharger Google Chrome"
   },
+  "downloadNow": {
+    "message": "Télécharger maintenant"
+  },
   "downloadSecretBackup": {
     "message": "Téléchargez cette phrase de sauvegarde secrète et conservez-la en lieu sûr sur un disque dur ou un support de stockage externe chiffré."
   },
   "downloadStateLogs": {
-    "message": "Télécharger les journaux d'événements"
+    "message": "Télécharger les journaux d’événements"
   },
   "dropped": {
     "message": "Déconnecté"
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "La recherche d’ENS a échoué."
+  },
+  "enterANumber": {
+    "message": "Saisissez un nombre"
   },
   "enterMaxSpendLimit": {
     "message": "Saisissez la limite de dépenses maximale"
@@ -1504,7 +1531,7 @@
     "message": "Obtenir des Ether"
   },
   "getEtherFromFaucet": {
-    "message": "Obtenir de l’Ether d’une faucet pour $1",
+    "message": "Obtenir de l’Ether d’un faucet pour le réseau $1.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1671,6 +1698,16 @@
   "initialTransactionConfirmed": {
     "message": "Votre transaction initiale a été confirmée par le réseau. Cliquez sur OK pour retourner à l’écran précédent."
   },
+  "inputLogicEmptyState": {
+    "message": "Saisissez uniquement le montant que vous êtes prêt à dépenser maintenant ou à l’avenir, prévu au contrat. Vous pourrez toujours augmenter le plafond des dépenses plus tard."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Cela permet de dépenser $1 de votre solde actuel, conformément au contrat.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Cela permet de dépenser tout votre solde de jetons jusqu’au plafond prévu dans le contrat ou à annuler ce même plafond. Sinon, prévoyez de fixer un plafond de dépenses inférieur."
+  },
   "install": {
     "message": "Installez"
   },
@@ -1707,7 +1744,7 @@
     "message": "Cet actif est un NFT et doit être ajouté de nouveau à la page Importer des NFT qui se trouve sous l’onglet NFT"
   },
   "invalidBlockExplorerURL": {
-    "message": "L'URL de l’explorateur de blocs est invalide"
+    "message": "L’URL de l’explorateur de blocs est invalide"
   },
   "invalidChainIdTooBig": {
     "message": "ID de chaîne invalide. L’ID de la chaîne est trop grand."
@@ -1792,7 +1829,7 @@
     "message": "En savoir plus"
   },
   "learnMoreAboutGas": {
-    "message": "$1 à propos des frais de gaz?",
+    "message": "Vous voulez $1 sur les frais de gaz ?",
     "description": "$1 will be replaced by the learnMore translation key"
   },
   "learnMoreUpperCase": {
@@ -2028,13 +2065,13 @@
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key. The link will open to instructions for users to validate custom network details."
   },
   "mismatchedNetworkName": {
-    "message": "Selon nos informations, le nom du réseau peut ne pas correspondre exactement à l'ID de la chaîne."
+    "message": "Selon nos informations, le nom du réseau peut ne pas correspondre exactement à l’ID de la chaîne."
   },
   "mismatchedNetworkSymbol": {
     "message": "Le symbole monétaire soumis ne correspond à cet ID de chaîne."
   },
   "mismatchedRpcUrl": {
-    "message": "Selon nos informations, la valeur de l'URL RPC soumise ne correspond pas à un fournisseur connu pour cet ID de chaîne."
+    "message": "Selon nos informations, la valeur de l’URL RPC soumise ne correspond pas à un fournisseur connu pour cet ID de chaîne."
   },
   "missingNFT": {
     "message": "Vous ne voyez pas votre NFT ?"
@@ -2229,7 +2266,7 @@
     "message": "Non, j’ai déjà une phrase mnémotechnique"
   },
   "noConversionDateAvailable": {
-    "message": "Aucune date de conversion des devises n'est disponible"
+    "message": "Aucune date de conversion des devises n’est disponible"
   },
   "noConversionRateAvailable": {
     "message": "Aucun taux de conversion disponible"
@@ -2287,7 +2324,7 @@
     "message": "Une détection améliorée des tokens est actuellement disponible sur les réseaux Ethereum Mainnet, Polygon, BSC et Avalanche. Il y aura bientôt d’autres nouveautés !"
   },
   "notifications10DescriptionThree": {
-    "message": "La fonction de détection des tokens est ACTIVÉE par défaut. Mais vous pouvez la désactiver dans les Paramètres."
+    "message": "La fonction de détection des tokens est DÉSACTIVÉE par défaut. Mais vous pouvez l’activer dans les Paramètres."
   },
   "notifications10DescriptionTwo": {
     "message": "Nous créons des tokens à partir de listes de tokens externes. Les tokens présents sur plus de deux listes seront automatiquement détectés."
@@ -2305,7 +2342,7 @@
     "message": "Activer le mode sombre"
   },
   "notifications12Description": {
-    "message": "Le mode sombre est enfin disponible pour l’extension ! Pour changer le mode d'affichage, allez dans « Paramètres » > « Expérimental » et sélectionnez l’une des options suivantes : Clair, Sombre, Système."
+    "message": "Le mode sombre est enfin disponible pour l’extension ! Pour changer le mode d’affichage, allez dans « Paramètres » > « Expérimental » et sélectionnez l’une des options suivantes : Clair, Sombre, Système."
   },
   "notifications12Title": {
     "message": "Mode sombre, quand ? Mode sombre maintenant ! 🕶️🦊"
@@ -2799,7 +2836,7 @@
     "message": "Supprimer"
   },
   "removeAccount": {
-    "message": "Supprimer le compte"
+    "message": "Suprimer le compte"
   },
   "removeAccountDescription": {
     "message": "Ce compte va être supprimé de votre portefeuille. Veuillez vérifier que vous avez la phrase secrète de récupération originale de ce compte ou la clé privée pour ce compte importé avant de continuer. Vous pouvez importer ou créer à nouveau des comptes à partir du menu des comptes. "
@@ -2890,8 +2927,11 @@
   "revealTheSeedPhrase": {
     "message": "Révéler la phrase mnémonique"
   },
+  "reviewSpendingCap": {
+    "message": "Modifiez votre plafond de dépenses"
+  },
   "revokeAllTokensTitle": {
-    "message": "Révoquer l'autorisation d'accéder à tous vos $1 ?",
+    "message": "Révoquer l’autorisation d’accéder à tous vos $1 ?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
   },
   "revokeApproveForAllDescription": {
@@ -3066,7 +3106,7 @@
     "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
   },
   "sendingToTokenContractWarning": {
-    "message": "Attention : vous êtes sur le point d'envoyer des jetons à l'adresse d'un contrat de jetons qui pourrait entraîner une perte de fonds. $1",
+    "message": "Attention : vous êtes sur le point d’envoyer des jetons à l’adresse d’un contrat de jetons qui pourrait entraîner une perte de fonds. $1",
     "description": "$1 is a clickable link with text defined by the 'learnMoreUpperCase' key. The link will open to a support article regarding the known contract address warning"
   },
   "sepolia": {
@@ -3079,11 +3119,14 @@
     "message": "MetaMask utilise ces services tiers de confiance pour améliorer la convivialité et la sécurité des produits."
   },
   "setApprovalForAll": {
-    "message": "Définir l'approbation pour tous"
+    "message": "Définir l’approbation pour tous"
   },
   "setApprovalForAllTitle": {
     "message": "Approuver $1 sans limite de dépenses",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Fixez un plafond de dépenses pour votre"
   },
   "settings": {
     "message": "Paramètres"
@@ -3218,7 +3261,7 @@
     "message": "Mettre à jour Snap"
   },
   "snapUpdateExplanation": {
-    "message": "$1 a besoin d'une version plus récente de votre snap.",
+    "message": "$1 a besoin d’une version plus récente de votre snap.",
     "description": "$1 is the dapp that is requesting an update to the snap."
   },
   "snaps": {
@@ -3285,6 +3328,13 @@
   "spendLimitTooLarge": {
     "message": "Limite de dépenses trop élevée"
   },
+  "spendingCapError": {
+    "message": "Erreur : saisissez uniquement des chiffres"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Saisissez uniquement le nombre de jetons $1 que vous êtes prêt à utiliser maintenant ou à l’avenir. Vous pourrez toujours augmenter la limite de jetons plus tard.",
+    "description": "$1 is origin of the site requesting the token limit"
+  },
   "srpInputNumberOfWords": {
     "message": "J’ai une phrase de $1 mots",
     "description": "This is the text for each option in the dropdown where a user selects how many words their secret recovery phrase has during import. The $1 is the number of words (either 12, 15, 18, 21, or 24)."
@@ -3319,10 +3369,10 @@
     "message": "Erreur lors du chargement des journaux d’état."
   },
   "stateLogFileName": {
-    "message": "Journaux d'événements de MetaMask"
+    "message": "Journaux d’événements de MetaMask"
   },
   "stateLogs": {
-    "message": "Journaux d'événements"
+    "message": "Journaux d’événements"
   },
   "stateLogsDescription": {
     "message": "Les journaux d’état contiennent les adresses publiques de vos comptes et vos transactions envoyées."
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Activer la détection améliorée des jetons"
   },
+  "tutorial": {
+    "message": "Tutoriel"
+  },
   "twelveHrTitle": {
     "message": "12 h :"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "L’affichage des médias et des données des NFT peut exposer votre adresse IP à des serveurs centralisés. Des API tierces (comme OpenSea) sont utilisées pour détecter les NFT dans votre portefeuille. Cela expose donc l’adresse de votre compte à ces services. Désactivez cette option si vous ne souhaitez pas que l’application récupère des données auprès de ces services."
   },
+  "useDefault": {
+    "message": "Utiliser par défaut"
+  },
   "usePhishingDetection": {
     "message": "Utiliser la fonction anti-hameçonnage"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Nom d’utilisateur"
   },
+  "verifyContractDetails": {
+    "message": "Vérifiez les détails du contrat"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Décimale de jeton disponible sur $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Vérifiez ce jeton sur $1 et qu’il s’agit bien de celui que vous souhaitez échanger.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Affichez"
+  },
   "viewAccount": {
     "message": "Voir le compte"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Voir le contact"
+  },
+  "viewDetails": {
+    "message": "Afficher les détails"
   },
   "viewFullTransactionDetails": {
     "message": "Afficher tous les détails de la transaction"
@@ -4222,7 +4287,7 @@
     "message": "Afficher sur Opensea"
   },
   "viewinExplorer": {
-    "message": "Voir $1 dans l'explorateur",
+    "message": "Voir $1 dans l’explorateur",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
   },
   "visitWebSite": {

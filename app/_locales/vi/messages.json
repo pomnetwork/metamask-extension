@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "Địa chỉ trong yêu cầu đăng nhập không trùng khớp với địa chỉ của tài khoản bạn đang sử dụng để đăng nhập."
   },
+  "SIWEDomainInvalidText": {
+    "message": "Trang web bạn đang cố gắng đăng nhập không trùng khớp với tên miền trong yêu cầu. Hãy thực hiện cẩn thận."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Yêu cầu trang web lừa đảo."
+  },
   "SIWEDomainWarningBody": {
     "message": "Trang web ($1) đang yêu cầu bạn đăng nhập vào một tên miền không đúng. Đây có thể là một cuộc tấn công lừa đảo.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Không an toàn"
   },
   "SIWELabelChainID": {
     "message": "Mã chuỗi:"
@@ -514,6 +523,9 @@
     "message": "Transak hỗ trợ thẻ tín dụng và ghi nợ, Apple Pay, MobiKwik và chuyển khoản ngân hàng (tùy thuộc vào vị trí) tại hơn 100 quốc gia. Nạp trực tiếp $1 vào tài khoản MetaMask của bạn.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "Mua ngay"
+  },
   "buyWithWyre": {
     "message": "Mua $1 qua Wyre"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Chúng tôi phát hiện tài sản này đã được thêm dưới dạng NFT. Bạn có muốn xóa tài sản khỏi danh sách token không?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "Đã sao chép!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Ngôn ngữ hiện tại"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "Đường dẫn URL RPC hiện tại cho mạng này không còn được dùng nữa."
   },
   "currentTitle": {
     "message": "Hiện tại:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Thập lục phân"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "Số thập phân của token"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Tải về Google Chrome"
+  },
+  "downloadNow": {
+    "message": "Tải về ngay"
   },
   "downloadSecretBackup": {
     "message": "Tải về Cụm mật khẩu khôi phục bí mật này và lưu trữ trên một ổ đĩa cứng hoặc phương tiện lưu trữ bên ngoài an toàn và được mã hóa."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "Tra cứu ENS thất bại."
+  },
+  "enterANumber": {
+    "message": "Nhập số"
   },
   "enterMaxSpendLimit": {
     "message": "Nhập giới hạn chi tiêu tối đa"
@@ -1504,7 +1531,7 @@
     "message": "Nhận Ether"
   },
   "getEtherFromFaucet": {
-    "message": "Nhận Ether từ một vòi dành cho $1",
+    "message": "Nhận Ether từ một vòi dành cho mạng $1.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "Mạng đã xác nhận giao dịch ban đầu của bạn. Nhấn OK để quay lại."
+  },
+  "inputLogicEmptyState": {
+    "message": "Chỉ nhập số mà bạn cảm thấy thoải mái với mức chi tiêu ở hiện tại hoặc trong tương lai của hợp đồng. Bạn luôn có thể tăng hạn mức chi tiêu sau này."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Điều này cho phép hợp đồng chi tiêu $1 từ số dư hiện tại của bạn.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Điều này cho phép hợp đồng chi tiêu tất cả số dư token của bạn cho đến khi đạt hạn mức hoặc bạn hủy hạn mức chi tiêu. Nếu không có ý định này, hãy cân nhắc đặt hạn mức chi tiêu thấp hơn."
   },
   "install": {
     "message": "Cài đặt"
@@ -2287,7 +2324,7 @@
     "message": "Tính năng phát hiện token cải tiến hiện đã có sẵn trên Mạng chính thức của Ethereum, mạng Polygon, BSC và Avalanche. Sẽ sớm có thêm nhiều mạng khác!"
   },
   "notifications10DescriptionThree": {
-    "message": "Theo mặc định, tính năng phát hiện token sẽ được BẬT. Nhưng bạn có thể tắt tính năng này trong phần Cài đặt."
+    "message": "Theo mặc định, tính năng phát hiện token hiện đang TẮT. Bạn có thể bật tính năng này trong phần Cài đặt."
   },
   "notifications10DescriptionTwo": {
     "message": "Chúng tôi lấy token từ các danh sách token của bên thứ ba. Những token được liệt kê trong 2 danh sách token trở lên sẽ tự động được phát hiện."
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "Hiện cụm từ khôi phục bí mật"
   },
+  "reviewSpendingCap": {
+    "message": "Xem lại hạn mức chi tiêu của bạn"
+  },
   "revokeAllTokensTitle": {
     "message": "Thu hồi quyền truy cập vào tất cả $1 của bạn?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "Phê duyệt $1 không có giới hạn chi tiêu",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Đặt hạn mức chi tiêu cho"
   },
   "settings": {
     "message": "Cài đặt"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "Giới hạn chi tiêu quá lớn"
+  },
+  "spendingCapError": {
+    "message": "Lỗi: Chỉ nhập số"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Chỉ nhập số mà bạn cảm thấy thoải mái khi truy cập $1 ở hiện tại hoặc trong tương lai. Bạn luôn có thể tăng giới hạn token sau này.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "Tôi có một cụm từ gồm $1 từ",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Bật phát hiện token nâng cao"
   },
+  "tutorial": {
+    "message": "Hướng dẫn"
+  },
   "twelveHrTitle": {
     "message": "12 giờ:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "Việc hiển thị nội dung đa phương tiện và dữ liệu NFT có thể làm lộ địa chỉ IP của bạn cho các máy chủ tập trung. API của bên thứ ba (như OpenSea) được dùng để phát hiện NFT trong ví của bạn. Điều này sẽ làm lộ địa chỉ tài khoản của bạn với các dịch vụ đó. Hãy tắt tính năng này nếu bạn không muốn ứng dụng lấy dữ liệu từ các dịch vụ đó."
   },
+  "useDefault": {
+    "message": "Sử dụng mặc định"
+  },
   "usePhishingDetection": {
     "message": "Sử dụng tính năng phát hiện lừa đảo"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Tên người dùng"
   },
+  "verifyContractDetails": {
+    "message": "Xác minh chi tiết hợp đồng"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Không tìm thấy số thập phân của token trên $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Hãy xác minh token này trên $1 và đảm bảo đây là token bạn muốn giao dịch.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Xem"
+  },
   "viewAccount": {
     "message": "Xem tài khoản"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Xem địa chỉ liên hệ"
+  },
+  "viewDetails": {
+    "message": "Xem chi tiết"
   },
   "viewFullTransactionDetails": {
     "message": "Xem chi tiết giao dịch đầy đủ"

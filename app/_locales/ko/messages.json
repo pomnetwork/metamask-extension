@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "로그인 요청 주소가 현재 로그인 계정의 주소와 일치하지 않습니다."
   },
+  "SIWEDomainInvalidText": {
+    "message": "로그인을 시도하는 사이트가 로그인 요청 도메인과 일치하지 않습니다. 주의하여 진행하세요."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "의심스러운 사이트 요청입니다."
+  },
   "SIWEDomainWarningBody": {
     "message": "($1) 웹사이트가 잘못된 도메인에 로그인하도록 요청하고 있습니다. 이는 피싱 공격일 수도 있습니다.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "안전하지 않음"
   },
   "SIWELabelChainID": {
     "message": "체인 ID:"
@@ -514,6 +523,9 @@
     "message": "트랜삭은 100개국 이상에서 신용카드, 직불카드, 애플 페이, 모비퀵, 은행 송금(지역에 따라 지원이 안 될 수 있음)을 지원합니다. $1 입금은 MetaMask 계정으로 직접 처리됩니다.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "지금 구매"
+  },
   "buyWithWyre": {
     "message": "Wyre로 $1 구매"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "이 자산이 NFT로 추가되었습니다. 토큰 목록에서 제거할까요?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "복사 완료!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "현재 언어"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "해당 네트워크의 현재 rpc url의 지원이 중단되었습니다."
   },
   "currentTitle": {
     "message": "현재:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "16진수"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "토큰 소수점"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Google Chrome 다운로드"
+  },
+  "downloadNow": {
+    "message": "지금 다운로드"
   },
   "downloadSecretBackup": {
     "message": "이 비밀 복구 구문을 다운로드하여 암호화된 외장 하드 드라이브나 저장 매체에 안전하게 보관하세요."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "ENS를 조회하지 못했습니다."
+  },
+  "enterANumber": {
+    "message": "금액 입력"
   },
   "enterMaxSpendLimit": {
     "message": "최대 지출 한도 입력"
@@ -1504,7 +1531,7 @@
     "message": "Ether 얻기"
   },
   "getEtherFromFaucet": {
-    "message": "$1용 포시트에서 Ether 얻기",
+    "message": "$1 네크워크 포시트에서 Ether 얻기",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "최초 거래를 네트워크에서 확인했습니다. 돌아가려면 확인을 클릭하세요."
+  },
+  "inputLogicEmptyState": {
+    "message": "계약에서 현재나 추후 지출하기에 무리가 없는 금액만 입력하세요. 지출 한도는 나중에 언제든지 상향할 수 있습니다."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "계약이 현재 잔액에서 $1만큼 지출할 수 있게 됩니다.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "토큰 잔액이 한도에 도달하거나 지출 한도를 철회할 때까지 계약이 모든 토큰 잔액을 지출할 수 있게 됩니다. 이를 원하지 않는다면 지출 한도를 하향하세요."
   },
   "install": {
     "message": "설치"
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "시드 구문 보기"
   },
+  "reviewSpendingCap": {
+    "message": "지출 한도 검토"
+  },
   "revokeAllTokensTitle": {
     "message": "내 모든 $1에 액세스할 수 있는 권한을 철회합니까?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "$1 무제한 지출 승인",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "다음에 대한 지출 한도 설정:"
   },
   "settings": {
     "message": "설정"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "지출 한도가 너무 큼"
+  },
+  "spendingCapError": {
+    "message": "오류: 숫자만 입력 가능"
+  },
+  "spendingCapErrorDescription": {
+    "message": "$1에서 현재나 추후 지출하기에 무리가 없는 금액만 입력하세요. 지출 한도는 나중에 언제든지 상향할 수 있습니다.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "제 구문은 $1개의 단어로 이루어져 있습니다",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "향상된 토큰 감지 켜기"
   },
+  "tutorial": {
+    "message": "튜토리얼"
+  },
   "twelveHrTitle": {
     "message": "12시간:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "NFT 미디어 및 데이터를 표시하면 IP 주소가 중앙 서버에 노출될 수 있습니다. 지갑에서 NFT를 감지하려면 (OpenSea와 같은) 타사 API를 사용해야 합니다. 이렇게 하면 해당 서비스의 계정 주소가 노출됩니다. 앱이 해당 서비스에서 데이터를 가져오지 않도록 하려면 비활성화된 상태로 유지하세요."
   },
+  "useDefault": {
+    "message": "기본값 사용"
+  },
   "usePhishingDetection": {
     "message": "피싱 감지 사용"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "사용자 이름"
   },
+  "verifyContractDetails": {
+    "message": "연락처 정보 인증"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "토큰 십진수는 $1에서 찾을 수 있습니다.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "$1에서 이 토큰이 거래할 토큰이 맞는지 확인하세요.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "보기"
+  },
   "viewAccount": {
     "message": "계정 보기"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "연락처 보기"
+  },
+  "viewDetails": {
+    "message": "세부 정보 보기"
   },
   "viewFullTransactionDetails": {
     "message": "전체 거래 세부정보 보기"

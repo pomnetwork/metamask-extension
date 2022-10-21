@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "Die Adresse in der Anmeldeanfrage entspricht nicht der Adresse des Kontos, mit dem Sie sich anmelden."
   },
+  "SIWEDomainInvalidText": {
+    "message": "Die Seite, auf der Sie sich anmelden möchten, entspricht nicht der Domain in der Anfrage. Bitte seien Sie vorsichtig."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Betrügerische Website-Anfrage."
+  },
   "SIWEDomainWarningBody": {
     "message": "Die Webseite ($1) bittet Sie, sich in der falschen Domain anzumelden. Dies könnte ein Phishing-Angriff sein.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Unsicher"
   },
   "SIWELabelChainID": {
     "message": "Chain-ID:"
@@ -514,6 +523,9 @@
     "message": "Transak unterstützt Kredit- und Debitkarten, Apple Pay, MobiKwik und Banküberweisungen (je nach Standort) in über 100 Ländern. $1-Einzahlungen direkt auf Ihr MetaMask-Konto.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "Jetzt kaufen"
+  },
   "buyWithWyre": {
     "message": "$1 mit Wyre kaufen"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Wir haben festgestellt, dass dieses Asset als NFT hinzugefügt wurde. Möchten Sie es aus Ihrer Token-Liste entfernen?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "Kopiert!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Aktuelle Sprache"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "Die aktuelle RPC-URL für dieses Netzwerk ist veraltet."
   },
   "currentTitle": {
     "message": "Aktuell:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Hexadezimal"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "Dezimalangabe der Präzision"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Google Chrome herunterladen"
+  },
+  "downloadNow": {
+    "message": "Jetzt herunterladen"
   },
   "downloadSecretBackup": {
     "message": "Laden Sie diesen geheimen Backup-Schlüssel herunter und bewahren Sie ihn sicher auf einer verschlüsselten externen Festplatte oder einem Speichermedium auf."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "ENS-Lookup fehlgeschlagen."
+  },
+  "enterANumber": {
+    "message": "Nummer eingeben"
   },
   "enterMaxSpendLimit": {
     "message": "Max. Ausgabelimit eingeben"
@@ -1504,7 +1531,7 @@
     "message": "Ether holen"
   },
   "getEtherFromFaucet": {
-    "message": "Ether für $1 vom Faucet holen",
+    "message": "Ether für das $1-Netzwerk von einem Faucet holen.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "Ihre erste Transaktion wurde vom Netzwerk bestätigt. Klicken Sie auf Okay, um zurückzukehren."
+  },
+  "inputLogicEmptyState": {
+    "message": "Geben Sie nur eine Nummer ein, die Sie den Contract jetzt oder in Zukunft ausgeben lassen möchten. Sie können die Ausgabenbegrenzung später jederzeit ändern."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Dies erlaubt dem Contract, $1 von Ihrem aktuellen Guthaben auszugeben.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Dies erlaubt dem Contract, Ihr gesamtes Token-Guthaben auszugeben, bis die Grenze erreicht wurde oder Sie die Einschränkung widerrufen. Sollte dies nicht Ihre Absicht sein, ziehen Sie eine niedrigere Ausgabegrenze in Betracht."
   },
   "install": {
     "message": "Installieren,"
@@ -2287,7 +2324,7 @@
     "message": "Die verbesserte Token-Erkennung ist derzeit in den Netzwerken Ethereum Mainnet, Polygon, BSC und Avalanche verfügbar. Es gibt bald mehr!"
   },
   "notifications10DescriptionThree": {
-    "message": "Die Token-Erkennungsfunktion ist standardmäßig eingeschaltet. Sie können sie jedoch in den Einstellungen deaktivieren."
+    "message": "Die Token-Erkennungsfunktion ist derzeit standardmäßig NICHT eingeschaltet. Sie können sie jedoch in den Einstellungen aktivieren."
   },
   "notifications10DescriptionTwo": {
     "message": "Wir beziehen Token von Token-Listen Dritter. Token, die in mehr als zwei Token-Listen aufgeführt sind, werden automatisch erkannt."
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "Seed-Phrase anzeigen"
   },
+  "reviewSpendingCap": {
+    "message": "Überprüfen SIe Ihre Ausgabegrenze"
+  },
   "revokeAllTokensTitle": {
     "message": "Erlaubnis zum Zugriff auf alle Ihre $1 entziehen?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "$1 ohne Ausgabenlimit genehmigen",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Eine Ausgabegrenze einrichten für"
   },
   "settings": {
     "message": "Einstellungen"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "Ausgabelimit zu groß"
+  },
+  "spendingCapError": {
+    "message": "Fehler: Nur Zahlen eingeben"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Geben Sie nur eine Nummer ein, auf die $1 jetzt oder in Zukunft zugreifen kann. Sie können das die Token-Begrenzung später jederzeit ändern.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "Ich habe eine $1-Wort-Phrase",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Erweiterte Token-Erkennung aktivieren"
   },
+  "tutorial": {
+    "message": "Tutorial"
+  },
   "twelveHrTitle": {
     "message": "12 Std:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "Durch die Anzeige von NFTs-Medien und -Daten kann deine IP-Adresse an zentrale Server weitergegeben werden. APIs von Drittanbietern (wie OpenSea) werden verwendet, um NFTs in deiner Wallet zu erkennen. Dadurch wird deine Kontoadresse bei diesen Diensten offengelegt. Lass diese Option deaktiviert, wenn du nicht möchtest, dass die App Daten von diesen Diensten abruft."
   },
+  "useDefault": {
+    "message": "Standardeinstellungen verwenden"
+  },
   "usePhishingDetection": {
     "message": "Phishing-Erkennung verwenden"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Nutzername"
   },
+  "verifyContractDetails": {
+    "message": "Contract-Details verifizieren"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Token Dezimalstellen finden Sie auf $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Überprüfen Sie diesen Token auf $1 und stellen Sie sicher, dass dies der Token ist, den Sie handeln möchten.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Anzeigen"
+  },
   "viewAccount": {
     "message": " Konto einsehen"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Kontakt anzeigen"
+  },
+  "viewDetails": {
+    "message": "Details anzeigen"
   },
   "viewFullTransactionDetails": {
     "message": "Alle Transaktionsdetails anzeigen"
@@ -4285,7 +4350,7 @@
     "message": "Erkunden dezentraler Apps"
   },
   "welcomeLoginDescription": {
-    "message": "Verwenden Sie MetaMask, um sich bei dezentralen Apps anzumelden - keine Anmeldung erforderlich."
+    "message": "Verwenden Sie MetaMask, um sich bei dezentralen Apps anzumelden – keine Anmeldung erforderlich."
   },
   "welcomeLoginTitle": {
     "message": "Sagen Sie Hallo zu Ihrer Wallet"

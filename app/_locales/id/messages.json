@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "Alamat pada permintaan masuk tidak sesuai dengan alamat akun yang Anda gunakan untuk masuk."
   },
+  "SIWEDomainInvalidText": {
+    "message": "Situs yang Anda coba masuki tidak cocok dengan domain yang diminta. Lanjutkan dengan hati-hati."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Permintaan situs yang menipu."
+  },
   "SIWEDomainWarningBody": {
     "message": "Situs web ($1) meminta Anda untuk masuk ke domain yang salah. Kemungkinan ini merupakan serangan pengelabuan.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Tidak aman"
   },
   "SIWELabelChainID": {
     "message": "ID Rantai:"
@@ -514,6 +523,9 @@
     "message": "Transak mendukung kartu kredit & debit, Apple Pay, MobiKwik, dan transfer bank (tergantung lokasi) di 100+ negara. $1 akan langsung didepositokan ke akun MetaMask Anda.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "Beli Sekarang"
+  },
   "buyWithWyre": {
     "message": "Beli $1 dengan Wyre"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Kami mendeteksi bahwa aset ini telah ditambahkan sebagai NFT. Anda ingin menghapusnya dari daftar token?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "Disalin!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Bahasa saat ini"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "URL rpc saat ini untuk jaringan ini tidak digunakan lagi."
   },
   "currentTitle": {
     "message": "Saat ini:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Hex"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "Desimal token"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Unduh Google Chrome"
+  },
+  "downloadNow": {
+    "message": "Unduh Sekarang"
   },
   "downloadSecretBackup": {
     "message": "Unduh Frasa Pemulihan Rahasia dan biarkan tersimpan secara aman di media penyimpanan atau hard drive eksternal terenkripsi."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "Pencarian ENS gagal."
+  },
+  "enterANumber": {
+    "message": "Masukkan angka"
   },
   "enterMaxSpendLimit": {
     "message": "Masukkan batas penggunaan maksimum"
@@ -1504,7 +1531,7 @@
     "message": "Dapatkan Ether"
   },
   "getEtherFromFaucet": {
-    "message": "Dapatkan Ether dari keran untuk $1",
+    "message": "Dapatkan Ether dari keran untuk jaringan $1.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "Transaksi awal Anda dikonfirmasikan oleh jaringan. Klik Oke untuk kembali."
+  },
+  "inputLogicEmptyState": {
+    "message": "Masukkan angka yang menurut Anda dapat digunakan kontrak sekarang atau di masa mendatang. Anda selalu dapat meningkatkan batas pengeluaran nanti."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Ini memungkinkan kontrak menggunakan $1 dari saldo Anda saat ini.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Ini memungkinkan kontrak menggunakan semua saldo token Anda hingga mencapai batas atau Anda mencabut batas pengeluaran. Jika ini bukan yang dimaksudkan, pertimbangkan untuk menetapkan batas pengeluaran yang lebih rendah."
   },
   "install": {
     "message": "Instal"
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "Ungkap frasa seed"
   },
+  "reviewSpendingCap": {
+    "message": "Tinjau batas pengeluaran Anda"
+  },
   "revokeAllTokensTitle": {
     "message": "Cabut izin untuk mengakses seluruh $1 Anda?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "Setujui $1 tanpa batas penggunaan",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Tetapkan batas pengeluaran untuk"
   },
   "settings": {
     "message": "Pengaturan"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "Batas penggunaan terlalu besar"
+  },
+  "spendingCapError": {
+    "message": "Kesalahan: Masukkan angka saja"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Masukkan angka yang menurut Anda dapat diakses $1 sekarang atau di masa mendatang. Anda selalu dapat meningkatkan batas token nanti.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "Frasa milik saya memiliki $1-kata",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Nyalakan deteksi token yang ditingkatkan"
   },
+  "tutorial": {
+    "message": "Tutorial"
+  },
   "twelveHrTitle": {
     "message": "12 j:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "Menampilkan media & data NFT dapat mengekspos alamat IP Anda ke server terpusat. API pihak ketiga (seperti OpenSea) digunakan untuk mendeteksi NFT di dompet Anda. API memperlihatkan alamat akun Anda dengan layanan tersebut. Biarkan nonaktif jika Anda tidak ingin aplikasi memakai data dari layanan tersebut."
   },
+  "useDefault": {
+    "message": "Gunakan default"
+  },
   "usePhishingDetection": {
     "message": "Gunakan deteksi pengelabuan"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Nama pengguna"
   },
+  "verifyContractDetails": {
+    "message": "Verifikasi detail kontrak"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Desimal token dapat ditemukan di $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Verifikasikan token ini di $1 dan pastikan ini adalah token yang ingin Anda perdagangkan.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Lihat"
+  },
   "viewAccount": {
     "message": "Lihat akun"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Lihat kontak"
+  },
+  "viewDetails": {
+    "message": "Lihat detail"
   },
   "viewFullTransactionDetails": {
     "message": "Lihat detail transaksi lengkap"

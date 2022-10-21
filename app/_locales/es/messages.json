@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "La dirección de la solicitud de inicio de sesión no coincide con la dirección de la cuenta que está utilizando para iniciar sesión."
   },
+  "SIWEDomainInvalidText": {
+    "message": "El sitio web en el que intenta iniciar sesión no coincide con el dominio de la solicitud de inicio de sesión. Proceda con precaución."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Solicitud de sitio engañoso."
+  },
   "SIWEDomainWarningBody": {
     "message": "El sitio web ($1) le pide que inicie sesión en un dominio incorrecto. Esto puede ser un ataque de phishing.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Inseguro"
   },
   "SIWELabelChainID": {
     "message": "Identificador de cadena:"
@@ -514,6 +523,9 @@
     "message": "Transak admite tarjetas de crédito y débito, Apple Pay, MobiKwik y transferencias bancarias (según la ubicación) en más de 100 países. Depósitos de $1 directamente en su cuenta MetaMask.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "Comprar ahora"
+  },
   "buyWithWyre": {
     "message": "Comprar $1 con Wyre"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Hemos detectado que este recurso se ha agregado como NFT. ¿Quiere eliminarlo de su lista de tokens?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "¡Copiado!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Idioma actual"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "La URL de rpc actual para esta red ha quedado obsoleta."
   },
   "currentTitle": {
     "message": "Actual:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Hex"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "Decimales del token"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Descargar Google Chrome"
+  },
+  "downloadNow": {
+    "message": "Descargar ahora"
   },
   "downloadSecretBackup": {
     "message": "Descargue esta frase secreta de respaldo y guárdela en un medio de almacenamiento o disco duro externo cifrado."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "Error al buscar ENS."
+  },
+  "enterANumber": {
+    "message": "Ingrese un número"
   },
   "enterMaxSpendLimit": {
     "message": "Escribir límite máximo de gastos"
@@ -1504,7 +1531,7 @@
     "message": "Obtener ether"
   },
   "getEtherFromFaucet": {
-    "message": "Obtener ether de un faucet para $1",
+    "message": "Obtenga Ether de un faucet para la red de $1.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "La red confirmó la transacción inicial. Haga clic en Aceptar para volver."
+  },
+  "inputLogicEmptyState": {
+    "message": "Ingrese solo una cantidad que esté dispuesto a gastar en el contrato ahora o en el futuro. Siempre puede aumentar el límite de gastos más adelante."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Esto permite que el contrato gaste $1 de su saldo actual.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Esto permite que el contrato gaste todo su saldo de tokens hasta que alcance el límite o usted revoque el límite de gasto. Si esta no es su intención, considere establecer un límite de gasto más bajo."
   },
   "install": {
     "message": "Instalar"
@@ -2287,7 +2324,7 @@
     "message": "En este momento, la detección mejorada de token está disponible en las redes Ethereum Mainnet, Polygon, BSC y Avalanche. ¡Y habrá más!"
   },
   "notifications10DescriptionThree": {
-    "message": "La función de detección de tóken está ACTIVADA de forma predeterminada. Pero puede desactivarla en Configuración."
+    "message": "La función de detección de tóken está DESACTIVADA de forma predeterminada. Pero puede activarla en Configuración."
   },
   "notifications10DescriptionTwo": {
     "message": "Obtenemos los tokens de listas de tokens de terceros. Los tokens enumerados en más de dos listas de tokens se detectarán automáticamente."
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "Revelar frase semilla"
   },
+  "reviewSpendingCap": {
+    "message": "Revise su límite de gasto"
+  },
   "revokeAllTokensTitle": {
     "message": "¿Revocar permiso para acceder a todo su $1?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "Aprobar $1 sin límite preestablecido",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Establezca un límite de gasto para su"
   },
   "settings": {
     "message": "Configuración"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "El límite de gastos es demasiado alto"
+  },
+  "spendingCapError": {
+    "message": "Error: ingrese solo números"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Ingrese solo una cantidad con la que se sienta cómodo para que $1 acceda ahora o en el futuro. Siempre puede aumentar el límite de tokens más tarde.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "Tengo una frase de $1 palabras",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Activar la detección mejorada de tokens"
   },
+  "tutorial": {
+    "message": "Tutorial"
+  },
   "twelveHrTitle": {
     "message": "12 horas:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "La visualización de medios y datos de NFT puede exponer su dirección IP a servidores centralizados. Las API de terceros (como OpenSea) se utilizan para detectar NFT en su cartera. Esto expone la dirección de su cuenta con esos servicios. Deje esta opción desactivada si no quiere que la aplicación extraiga datos de esos servicios."
   },
+  "useDefault": {
+    "message": "Uso por defecto"
+  },
   "usePhishingDetection": {
     "message": "Usar detección de phishing"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Nombre de usuario"
   },
+  "verifyContractDetails": {
+    "message": "Verificar detalles del contrato"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Los decimales del token se pueden encontrar en $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Verifique este token en $1 y asegúrese de que sea el token con el que quiere realizar la transacción.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Ver"
+  },
   "viewAccount": {
     "message": "Ver cuenta"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Ver contacto"
+  },
+  "viewDetails": {
+    "message": "Ver detalles"
   },
   "viewFullTransactionDetails": {
     "message": "Ver detalles completos de la transacción"

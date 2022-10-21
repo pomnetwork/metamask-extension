@@ -47,9 +47,18 @@
   "SIWEAddressInvalid": {
     "message": "Адрес в запросе на вход не соответствует адресу счета, который вы используете для входа."
   },
+  "SIWEDomainInvalidText": {
+    "message": "Сайт, на который вы пытаетесь войти, не соответствует домену в запросе. Действуйте с осторожностью."
+  },
+  "SIWEDomainInvalidTitle": {
+    "message": "Запрос мошеннического сайта."
+  },
   "SIWEDomainWarningBody": {
     "message": "Веб-сайт ($1) просит вас войти в неправильный домен. Это может быть фишинговая атака.",
     "description": "$1 represents the website domain"
+  },
+  "SIWEDomainWarningLabel": {
+    "message": "Небезопасно"
   },
   "SIWELabelChainID": {
     "message": "Ид. блокчейна:"
@@ -514,6 +523,9 @@
     "message": "Transak поддерживает кредитные и дебетовые карты, Apple Pay, MobiKwik и банковские переводы (в зависимости от местоположения) в более чем 100 странах. $1 вносится прямо на ваш счет MetaMask.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
+  "buyNow": {
+    "message": "Купить сейчас"
+  },
   "buyWithWyre": {
     "message": "Купить 1 $ с помощью Wyre"
   },
@@ -761,6 +773,9 @@
   "convertTokenToNFTExistDescription": {
     "message": "Мы обнаружили, что этот актив был добавлен как NFT. Хотите удалить его из списка токенов?"
   },
+  "coolWallet": {
+    "message": "CoolWallet"
+  },
   "copiedExclamation": {
     "message": "Скопировано!"
   },
@@ -811,6 +826,9 @@
   },
   "currentLanguage": {
     "message": "Текущий язык"
+  },
+  "currentRpcUrlDeprecated": {
+    "message": "Текущий URL-адрес rpc для этой сети устарел."
   },
   "currentTitle": {
     "message": "Текущий:"
@@ -886,6 +904,9 @@
   },
   "dataHex": {
     "message": "Шестнадцатиричные"
+  },
+  "dcent": {
+    "message": "D'Cent"
   },
   "decimal": {
     "message": "Число десятичных знаков токена"
@@ -989,6 +1010,9 @@
   },
   "downloadGoogleChrome": {
     "message": "Скачать Google Chrome"
+  },
+  "downloadNow": {
+    "message": "Скачать сейчас"
   },
   "downloadSecretBackup": {
     "message": "Скачайте эту секретную фразу для восстановления и храните ее в надежном месте на внешнем зашифрованном жестком диске или носителе."
@@ -1233,6 +1257,9 @@
   },
   "ensUnknownError": {
     "message": "Ошибка поиска ENS."
+  },
+  "enterANumber": {
+    "message": "Введите цифру"
   },
   "enterMaxSpendLimit": {
     "message": "Введите максимальный лимит расходов"
@@ -1504,7 +1531,7 @@
     "message": "Получить Ether"
   },
   "getEtherFromFaucet": {
-    "message": "Получите Ether из крана для $1",
+    "message": "Получите из крана Ether для сети $1.",
     "description": "Displays network name for Ether faucet"
   },
   "getStarted": {
@@ -1670,6 +1697,16 @@
   },
   "initialTransactionConfirmed": {
     "message": "Ваша первоначальная транзакция подтверждена сетью. Нажмите ОК, чтобы вернуться."
+  },
+  "inputLogicEmptyState": {
+    "message": "Введите только ту сумму, которую вам комфортно тратить по контракту сейчас или в будущем. Вы всегда можете увеличить лимит расходов позже."
+  },
+  "inputLogicEqualOrSmallerNumber": {
+    "message": "Это позволяет контракту потратить $1 с вашего текущего баланса.",
+    "description": "$1 is the current token balance in the account and the name of the current token"
+  },
+  "inputLogicHigherNumber": {
+    "message": "Это позволяет контракту расходовать весь ваш баланс токенов до тех пор, пока не будет достигнут лимит расходов или вы не отмените его. Если вы не хотите такого развития событий, подумайте о снижении лимита расходов."
   },
   "install": {
     "message": "Установите,"
@@ -2287,7 +2324,7 @@
     "message": "Улучшенное обнаружение токенов в настоящее время доступно в сетях Ethereum Mainnet, Polygon, BSC и Avalanche. Это еще не все!"
   },
   "notifications10DescriptionThree": {
-    "message": "Функция обнаружения токена включена по умолчанию. Но вы можете отключить ее в настройках."
+    "message": "Функция обнаружения токена сейчас ВЫКЛЮЧЕНА по умолчанию. Вы можете отключить ее в настройках."
   },
   "notifications10DescriptionTwo": {
     "message": "Мы получаем токены из списков сторонних токенов. Токены, указанные более чем в двух списках токенов, будут обнаружены автоматически."
@@ -2890,6 +2927,9 @@
   "revealTheSeedPhrase": {
     "message": "Показать сид-фразу"
   },
+  "reviewSpendingCap": {
+    "message": "Проверьте свой лимит расходов"
+  },
   "revokeAllTokensTitle": {
     "message": "Отозвать разрешение на доступ ко всем вашим $1?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
@@ -3084,6 +3124,9 @@
   "setApprovalForAllTitle": {
     "message": "Одобрить $1 без ограничений по расходам",
     "description": "The token symbol that is being approved"
+  },
+  "setSpendingCap": {
+    "message": "Установите верхний лимит расходов для своего"
   },
   "settings": {
     "message": "Настройки"
@@ -3284,6 +3327,13 @@
   },
   "spendLimitTooLarge": {
     "message": "Лимит расходов слишком велик"
+  },
+  "spendingCapError": {
+    "message": "Ошибка: вводите только цифры"
+  },
+  "spendingCapErrorDescription": {
+    "message": "Введите только то число в качестве лимита для $1, которое приемлемо для вас. Вы всегда можете увеличить лимит токенов позже.",
+    "description": "$1 is origin of the site requesting the token limit"
   },
   "srpInputNumberOfWords": {
     "message": "У меня есть фраза из $1 слов(-а)",
@@ -4083,6 +4133,9 @@
   "turnOnTokenDetection": {
     "message": "Включите расширенное обнаружение токенов"
   },
+  "tutorial": {
+    "message": "Руководство"
+  },
   "twelveHrTitle": {
     "message": "12 ч:"
   },
@@ -4165,6 +4218,9 @@
   "useCollectibleDetectionDescription": {
     "message": "Отображение медиафайлов и данных NFT может раскрыть ваш IP-адрес централизованным серверам. Сторонние API (например, OpenSea) используются для обнаружения NFT в вашем кошельке. При таком обнаружении адрес вашего счета становится известен этим службами. Оставьте этот параметр отключенным, если не хотите, чтобы приложение получало данные от этих служб."
   },
+  "useDefault": {
+    "message": "Использовать значения по умолчанию"
+  },
   "usePhishingDetection": {
     "message": "Использовать обнаружение фишинга"
   },
@@ -4180,6 +4236,9 @@
   "userName": {
     "message": "Имя пользователя"
   },
+  "verifyContractDetails": {
+    "message": "Проверьте реквизиты контракта"
+  },
   "verifyThisTokenDecimalOn": {
     "message": "Число десятичных знаков токена можно найти на $1",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
@@ -4192,6 +4251,9 @@
     "message": "Проверьте этот токен на $1 и убедитесь, что это тот токен, которым вы хотите торговать.",
     "description": "Points the user to etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"etherscan\""
   },
+  "view": {
+    "message": "Просмотр"
+  },
   "viewAccount": {
     "message": "Смотреть счет"
   },
@@ -4200,6 +4262,9 @@
   },
   "viewContact": {
     "message": "Смотреть контакт"
+  },
+  "viewDetails": {
+    "message": "Просмотр сведений"
   },
   "viewFullTransactionDetails": {
     "message": "Смотреть все реквизиты транзакции"
