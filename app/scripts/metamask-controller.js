@@ -1129,10 +1129,6 @@ export default class MetamaskController extends EventEmitter {
     this.extension.runtime.onMessageExternal.addListener(onMessageReceived);
     // Fire a ping message to check if other extensions are running
     checkForMultipleVersionsRunning();
-    this.notifyAllConnections({
-      method: 'TEST_REST',
-      params: {},
-    });
   }
 
   ///: BEGIN:ONLY_INCLUDE_IN(flask)
